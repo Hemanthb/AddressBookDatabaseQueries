@@ -11,4 +11,6 @@
 
 --SELECT * FROM AddressBook WHERE Firstname = 'jubith';
 
-UPDATE AddressBook SET State = 'Kerala' WHERE FirstName = 'jubith';
+--UPDATE AddressBook SET State = 'Kerala' WHERE FirstName = 'jubith';
+
+DELETE FROM AddressBook WHERE FirstName = 'jubith';
