@@ -13,4 +13,8 @@
 
 --UPDATE AddressBook SET State = 'Kerala' WHERE FirstName = 'jubith';
 
-DELETE FROM AddressBook WHERE FirstName = 'jubith';
+--DELETE FROM AddressBook WHERE FirstName = 'jubith';
+
+--SELECT * FROM AddressBook WHERE City = 'chennai';
+
+SELECT * FROM AddressBook WHERE State = 'Tamil Nadu';
