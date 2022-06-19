@@ -21,5 +21,12 @@
 
 --SELECT COUNT(*) FROM AddressBook WHERE State = 'Tamil Nadu';
 
-SELECT * FROM AddressBook ORDER BY FirstName;
+--SELECT * FROM AddressBook ORDER BY FirstName;
+
+--ALTER TABLE AddressBook ADD Type VARCHAR(20);
+
+--UPDATE AddressBook SET Type='Friends' WHERE FirstName = 'Hemanth';
+
+UPDATE AddressBook SET Type='Family' WHERE FirstName = 'Vysagh' OR FirstName = 'jubith';
+
 
