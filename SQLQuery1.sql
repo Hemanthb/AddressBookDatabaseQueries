@@ -17,4 +17,6 @@
 
 --SELECT * FROM AddressBook WHERE City = 'chennai';
 
-SELECT * FROM AddressBook WHERE State = 'Tamil Nadu';
+--SELECT * FROM AddressBook WHERE State = 'Tamil Nadu';
+
+SELECT COUNT(*) FROM AddressBook WHERE State = 'Tamil Nadu';
