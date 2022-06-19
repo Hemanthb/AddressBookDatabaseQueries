@@ -27,6 +27,6 @@
 
 --UPDATE AddressBook SET Type='Friends' WHERE FirstName = 'Hemanth';
 
-UPDATE AddressBook SET Type='Family' WHERE FirstName = 'Vysagh' OR FirstName = 'jubith';
+--UPDATE AddressBook SET Type='Family' WHERE FirstName = 'Vysagh' OR FirstName = 'jubith';
 
-
+SELECT COUNT(*) FROM AddressBook WHERE Type='Family';
