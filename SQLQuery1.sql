@@ -29,4 +29,27 @@
 
 --UPDATE AddressBook SET Type='Family' WHERE FirstName = 'Vysagh' OR FirstName = 'jubith';
 
-SELECT COUNT(*) FROM AddressBook WHERE Type='Family';
+--SELECT COUNT(*) FROM AddressBook WHERE Type='Family';
+
+SELECT * FROM AddressBook;
+
+USE AddressBookService;
+
+--- ER Usecases ----
+
+CREATE TABLE AddressBookTypes (TypeId int PRIMARY KEY IDENTITY(1,1), BookType VARCHAR(255));
+
+INSERT INTO AddressBookTypes VALUES('Friends'),('Family'),('Colleagues');
+
+
+SELECT * FROM AddressBookTypes;
+
+ALTER TABLE AddressBook DROP COLUMN Type;
+
+select * from AddressBook;
+
+ALTER TABLE AddressBook ADD Type_Id INT FOREIGN KEY REFERENCES AddressBook(PhoneNo)
+
+USE AddressBookService;
+
+DELETE AddressBook WHERE State = 'Tamil Nadu';
